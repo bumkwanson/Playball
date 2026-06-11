@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>구장별 먹거리 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html" style="font-family:'KBO',sans-serif;font-weight:700">PLAYBALL</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>구장별 먹거리</h2>
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>구장별 먹거리</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+    <section class="inner-page">
+      <div class="container">
+
+        <style>
+          .food-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;border-bottom:2px solid #eee;padding-bottom:12px}
+          .food-tab{border:none;background:none;padding:9px 16px;font-size:13px;font-weight:700;cursor:pointer;color:#888;transition:all .2s;font-family:'KBO',sans-serif}
+          .food-tab.on{background:#1bac91;color:#fff;border-radius:8px}
+          .food-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+          .food-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:20px;text-align:center}
+          .food-card .fe{font-size:38px;margin-bottom:10px}
+          .food-card h4{font-size:14px;margin-bottom:4px}
+          .food-card p{font-size:12px;color:#888}
+          .notice{background:#fff8e1;border:1px solid #ffe082;border-radius:12px;padding:16px 20px;font-size:13px;color:#6d4c00}
+          @media(max-width:500px){.food-grid{grid-template-columns:1fr 1fr}}
+        </style>
+        <div class="section-title mb-5" data-aos="fade-up"><h2>구장별 먹거리</h2><p>각 구장의 명물 먹거리와 반입 가능 음식 정보예요</p></div>
+        <div class="food-tabs">
+          <button class="food-tab on" onclick="switchFood('잠실',this)">잠실</button><button class="food-tab" onclick="switchFood('고척',this)">고척</button><button class="food-tab" onclick="switchFood('인천',this)">인천</button><button class="food-tab" onclick="switchFood('수원',this)">수원</button><button class="food-tab" onclick="switchFood('창원',this)">창원</button><button class="food-tab" onclick="switchFood('사직',this)">사직</button><button class="food-tab" onclick="switchFood('대구',this)">대구</button><button class="food-tab" onclick="switchFood('광주',this)">광주</button><button class="food-tab" onclick="switchFood('대전',this)">대전</button>
+        </div>
+        <div class="food-grid">
+          <div class="food-card"><div class="fe">🍗</div><h4>야구장 치킨</h4><p>직관의 필수템</p></div><div class="food-card"><div class="fe">🍺</div><h4>생맥주</h4><p>시원한 한 잔</p></div><div class="food-card"><div class="fe">🍱</div><h4>컵밥</h4><p>가성비 최고</p></div><div class="food-card"><div class="fe">🌭</div><h4>핫도그</h4><p>간편한 스낵</p></div><div class="food-card"><div class="fe">🥤</div><h4>콜라·사이다</h4><p>경기 관람 필수</p></div><div class="food-card"><div class="fe">🍜</div><h4>라면·우동</h4><p>따뜻한 국물</p></div>
+        </div>
+        <div class="notice">💡 대부분의 구장은 외부 음식 반입이 가능하지만, 유리병·캔은 반입 불가예요. 플라스틱 용기나 포장 음식으로 준비하세요!</div>
+        <script>function switchFood(t,btn){document.querySelectorAll('.food-tab').forEach(b=>b.classList.remove('on'));btn.classList.add('on');}</script>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

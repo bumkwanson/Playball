@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>문의 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html" style="font-family:'KBO',sans-serif;font-weight:700">PLAYBALL</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link active" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>문의</h2>
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>문의</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+    <section class="inner-page">
+      <div class="container">
+
+        <section id="contact" class="contact" style="padding:0">
+          <div class="row no-gutters justify-content-center" data-aos="fade-up">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address"><i class="bi bi-geo-alt"></i><h4>소속:</h4><p>중앙대학교 표준웹테크놀로지 01분반</p></div>
+                <div class="email mt-4"><i class="bi bi-people"></i><h4>팀명:</h4><p>TEAM 리싸인</p></div>
+                <div class="phone mt-4"><i class="bi bi-person-badge"></i><h4>팀원:</h4><p>20221169 손범관 · 20202899 전우빈</p></div>
+              </div>
+            </div>
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <iframe style="border:0;width:100%;height:270px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163!2d126.95!3d37.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sko!2skr!4v1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="row mt-5 justify-content-center" data-aos="fade-up">
+            <div class="col-lg-10">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group"><input type="text" name="name" class="form-control" placeholder="이름" required></div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0"><input type="email" class="form-control" name="email" placeholder="이메일" required></div>
+                </div>
+                <div class="form-group mt-3">
+                  <select class="form-control" name="subject">
+                    <option>오류 제보</option><option>내용 수정 요청</option><option>기능 제안</option><option>기타 문의</option>
+                  </select>
+                </div>
+                <div class="form-group mt-3"><input type="text" class="form-control" name="subject2" placeholder="제목" required></div>
+                <div class="form-group mt-3"><textarea class="form-control" name="message" rows="5" placeholder="내용을 자세히 작성해주세요" required></textarea></div>
+                <div class="my-3"><div class="loading">Loading</div><div class="error-message"></div><div class="sent-message">메시지가 전송됐어요!</div></div>
+                <div class="text-center"><button type="submit">문의 보내기</button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

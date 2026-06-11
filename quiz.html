@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>팀 추천 테스트 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html" style="font-family:'KBO',sans-serif;font-weight:700">PLAYBALL</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link active" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>팀 추천 테스트</h2>
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>팀 추천 테스트</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+    <section class="inner-page">
+      <div class="container">
+
+        <style>
+          .quiz-container{max-width:660px;margin:0 auto}
+          .quiz-box{background:#fff;border:1px solid #eee;border-radius:16px;padding:40px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+          .q-step{font-size:13px;color:#1bac91;font-weight:700;margin-bottom:8px}
+          .q-title{font-size:22px;margin-bottom:28px}
+          .q-opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+          .q-opt{background:#f9f9f9;border:2px solid #eee;border-radius:12px;padding:16px;cursor:pointer;font-size:14px;font-weight:500;text-align:left;display:flex;gap:10px;align-items:center;transition:all .2s}
+          .q-opt:hover{border-color:#1bac91;background:#fff}
+          .q-opt .em{font-size:22px}
+          .q-dots{display:flex;gap:8px;margin-top:24px;justify-content:center}
+          .q-dot{width:8px;height:8px;border-radius:50%;background:#eee}
+          .q-dot.on{background:#1bac91;width:24px;border-radius:4px}
+          .q-back{background:none;border:none;font-size:13px;color:#888;cursor:pointer;margin-top:12px;display:block}
+          .result{text-align:center;display:none}
+          .result.show{display:block}
+          .result-team{font-size:52px;font-weight:700;margin:12px 0 6px}
+          .result-city{font-size:15px;color:#888;margin-bottom:16px}
+          .result-desc{font-size:14px;color:#666;max-width:400px;margin:0 auto 24px;line-height:1.9}
+          .result-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+          .btn-retry{border:2px solid #eee;background:none;padding:10px 22px;border-radius:50px;cursor:pointer;font-size:14px;font-weight:700}
+          .btn-primary-custom{background:#1bac91;color:#fff;padding:12px 26px;border-radius:50px;border:none;font-size:14px;font-weight:700;cursor:pointer}
+          @media(max-width:500px){.q-opts{grid-template-columns:1fr}}
+        </style>
+        <div class="quiz-container">
+          <p class="text-center text-muted mb-4">4가지 질문에 답하면 당신에게 딱 맞는 구단을 추천해드려요</p>
+          <div class="quiz-box">
+            <div id="quizBody">
+              <div class="q-step">QUESTION <span id="qNum">1</span> / 4</div>
+              <h3 class="q-title" id="qTitle"></h3>
+              <div class="q-opts" id="qOpts"></div>
+              <div class="q-dots" id="qDots"></div>
+              <button class="q-back" id="backBtn" onclick="prev()">← 이전으로</button>
+            </div>
+            <div class="result" id="result">
+              <div style="font-size:13px;color:#888">당신에게 추천하는 팀</div>
+              <div class="result-team" id="rTeam"></div>
+              <div class="result-city" id="rCity"></div>
+              <div class="result-desc" id="rDesc"></div>
+              <div class="result-btns">
+                <button class="btn-primary-custom" onclick="location.href='team-detail.html'">구단 상세 보기</button>
+                <button class="btn-retry" onclick="restart()">다시 하기 ↺</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+        const teams={
+          LG:{name:"LG 트윈스",city:"서울 · 잠실야구장",c:"#c30452",desc:"수도권 최고 인기 구단! 29년 만의 우승을 차지한 팀. 두꺼운 팬층과 열정적인 응원이 매력이에요."},
+          DOOSAN:{name:"두산 베어스",city:"서울 · 잠실야구장",c:"#131230",desc:"전통의 명문! 잠실을 LG와 함께 쓰는 라이벌 관계가 볼거리예요."},
+          KIWOOM:{name:"키움 히어로즈",city:"서울 · 고척스카이돔",c:"#570514",desc:"유일한 돔구장 팀! 날씨 걱정 없이 쾌적하게 직관할 수 있어요."},
+          SSG:{name:"SSG 랜더스",city:"인천 · 랜더스필드",c:"#ce0e2d",desc:"축제 같은 응원 문화! 랜더스필드는 야구장보다 놀이공원 느낌이에요."},
+          KT:{name:"KT 위즈",city:"수원 · KT위즈파크",c:"#000000",desc:"수원의 신흥 강팀. 깔끔하고 현대적인 분위기를 좋아한다면 딱!"},
+          NC:{name:"NC 다이노스",city:"창원 · NC파크",c:"#315288",desc:"한국에서 가장 예쁜 구장! 차분하고 단단한 팬덤이 매력이에요."},
+          LOTTE:{name:"롯데 자이언츠",city:"부산 · 사직야구장",c:"#041e42",desc:"부산 사직의 전설적인 응원! '아주라' 응원은 꼭 경험해봐야 해요."},
+          SAMSUNG:{name:"삼성 라이온즈",city:"대구 · 라이온즈파크",c:"#074ca1",desc:"대구의 명문 구단. 파란 물결 응원과 강한 자부심이 특징이에요."},
+          KIA:{name:"KIA 타이거즈",city:"광주 · 챔피언스필드",c:"#ea0029",desc:"역대 최다 우승 명문! 광주의 빨간 열정을 느껴보세요."},
+          HANWHA:{name:"한화 이글스",city:"대전 · 이글스파크",c:"#fc4e00",desc:"'보살팬'으로 유명한 애정의 끝판왕. 언더독의 매력에 빠질 거예요."},
+        };
+        const qs=[
+          {q:"어느 지역에 살고 있나요?",opts:[{e:"🏙️",t:"수도권 (서울·경기·인천)",v:["LG","DOOSAN","KIWOOM","SSG","KT"]},{e:"🌊",t:"영남권 (부산·대구·경남)",v:["LOTTE","SAMSUNG","NC"]},{e:"🌾",t:"호남·충청 (광주·대전)",v:["KIA","HANWHA"]},{e:"✈️",t:"지역 상관없어요",v:Object.keys(teams)}]},
+          {q:"어떤 응원 분위기가 좋아요?",opts:[{e:"🔥",t:"화끈하고 열정적인 응원",v:["LOTTE","KIA","HANWHA","SAMSUNG"]},{e:"😎",t:"세련되고 차분한 분위기",v:["LG","DOOSAN","KT","NC"]},{e:"🎉",t:"축제처럼 신나는 분위기",v:["KIWOOM","SSG","LOTTE"]},{e:"🤷",t:"뭐든 상관없어요",v:Object.keys(teams)}]},
+          {q:"어떤 팀 스타일이 끌려요?",opts:[{e:"🏆",t:"전통 명문 구단",v:["LG","DOOSAN","KIA","LOTTE","SAMSUNG"]},{e:"🚀",t:"패기 넘치는 신흥 강팀",v:["KIWOOM","SSG","KT","NC"]},{e:"💙",t:"애정 가는 언더독",v:["HANWHA","KIWOOM","NC"]},{e:"🤷",t:"상관없어요",v:Object.keys(teams)}]},
+          {q:"어떤 색이 끌려요?",opts:[{e:"❤️",t:"빨강·핑크 계열",v:["KIA","SSG","LG"]},{e:"💙",t:"파랑·남색 계열",v:["SAMSUNG","NC","LOTTE","DOOSAN"]},{e:"🧡",t:"주황 계열",v:["HANWHA"]},{e:"🖤",t:"검정 계열",v:["KT","KIWOOM"]}]},
+        ];
+        let step=0,scores={};
+        function init(){scores={};Object.keys(teams).forEach(k=>scores[k]=0)}
+        init();
+        function render(){
+          const q=qs[step];
+          document.getElementById('qNum').textContent=step+1;
+          document.getElementById('qTitle').textContent=q.q;
+          const o=document.getElementById('qOpts');o.innerHTML='';
+          q.opts.forEach(opt=>{const b=document.createElement('button');b.className='q-opt';b.innerHTML='<span class="em">'+opt.e+'</span>'+opt.t;b.onclick=()=>choose(opt.v);o.appendChild(b);});
+          const d=document.getElementById('qDots');d.innerHTML='';
+          qs.forEach((_,i)=>{const s=document.createElement('div');s.className='q-dot'+(i===step?' on':'');d.appendChild(s);});
+          document.getElementById('backBtn').style.visibility=step>0?'visible':'hidden';
+        }
+        function choose(vals){vals.forEach(v=>{if(scores[v]!==undefined)scores[v]++});if(step<qs.length-1){step++;render();}else showResult();}
+        function prev(){if(step>0){step--;render();}}
+        function showResult(){
+          const best=Object.keys(scores).reduce((a,b)=>scores[a]>=scores[b]?a:b);
+          const t=teams[best];
+          document.getElementById('rTeam').textContent=t.name;
+          document.getElementById('rTeam').style.color=t.c;
+          document.getElementById('rCity').textContent=t.city;
+          document.getElementById('rDesc').textContent=t.desc;
+          document.getElementById('quizBody').style.display='none';
+          document.getElementById('result').classList.add('show');
+        }
+        function restart(){step=0;init();document.getElementById('result').classList.remove('show');document.getElementById('quizBody').style.display='block';render();}
+        render();
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

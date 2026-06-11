@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>응원가 모음 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html" style="font-family:'KBO',sans-serif;font-weight:700">PLAYBALL</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>응원가 모음</h2>
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>응원가 모음</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+    <section class="inner-page">
+      <div class="container">
+
+        <style>
+          .chant-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px;border-bottom:2px solid #eee;padding-bottom:14px}
+          .chant-tab{border:none;background:none;padding:9px 18px;font-size:13px;font-weight:700;cursor:pointer;color:#888;border-radius:8px;transition:all .2s;font-family:'KBO',sans-serif}
+          .chant-tab.on{background:#1bac91;color:#fff}
+          .chant-item{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #eee;border-radius:12px;padding:18px 22px;margin-bottom:12px}
+          .chant-num{font-size:26px;font-weight:700;color:#1bac91;min-width:40px;font-family:'KBO',sans-serif}
+          .chant-info h4{font-size:15px;margin-bottom:3px}
+          .chant-info p{font-size:12px;color:#999}
+          .chant-yt{margin-left:auto;background:#ff0000;color:#fff;padding:8px 16px;border-radius:50px;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}
+        </style>
+        <div class="section-title mb-5" data-aos="fade-up"><h2>응원가 모음</h2><p>KBO 각 구단의 대표 응원가를 모았어요. 팀을 눌러 필터하세요</p></div>
+        <div class="chant-tabs">
+          <button class="chant-tab on" onclick="switchChant('전체',this)">전체</button><button class="chant-tab" onclick="switchChant('LG',this)">LG</button><button class="chant-tab" onclick="switchChant('두산',this)">두산</button><button class="chant-tab" onclick="switchChant('키움',this)">키움</button><button class="chant-tab" onclick="switchChant('SSG',this)">SSG</button><button class="chant-tab" onclick="switchChant('KT',this)">KT</button><button class="chant-tab" onclick="switchChant('NC',this)">NC</button><button class="chant-tab" onclick="switchChant('롯데',this)">롯데</button><button class="chant-tab" onclick="switchChant('삼성',this)">삼성</button><button class="chant-tab" onclick="switchChant('KIA',this)">KIA</button><button class="chant-tab" onclick="switchChant('한화',this)">한화</button>
+        </div>
+        <div id="chantList">
+          <div class="chant-item" data-team="LG"><div class="chant-num">01</div><div class="chant-info"><h4>승리의 LG</h4><p>LG · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="LG"><div class="chant-num">02</div><div class="chant-info"><h4>엘지 트윈스 파이팅</h4><p>LG · 떼창</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="두산"><div class="chant-num">03</div><div class="chant-info"><h4>베어스 승리하라</h4><p>두산 · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="키움"><div class="chant-num">04</div><div class="chant-info"><h4>히어로즈 파이팅</h4><p>키움 · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="SSG"><div class="chant-num">05</div><div class="chant-info"><h4>랜더스 화이팅</h4><p>SSG · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="KT"><div class="chant-num">06</div><div class="chant-info"><h4>위즈 파이팅</h4><p>KT · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="NC"><div class="chant-num">07</div><div class="chant-info"><h4>NC 다이노스</h4><p>NC · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="롯데"><div class="chant-num">08</div><div class="chant-info"><h4>아주라</h4><p>롯데 · 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="삼성"><div class="chant-num">09</div><div class="chant-info"><h4>삼성 라이온즈 파이팅</h4><p>삼성 · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="KIA"><div class="chant-num">10</div><div class="chant-info"><h4>기아 타이거즈</h4><p>KIA · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div><div class="chant-item" data-team="한화"><div class="chant-num">11</div><div class="chant-info"><h4>한화 이글스 파이팅</h4><p>한화 · 팀 대표 응원가</p></div><a href="#" class="chant-yt" target="_blank">▶ YouTube</a></div>
+        </div>
+        <script>
+        function switchChant(t,btn){document.querySelectorAll('.chant-tab').forEach(b=>b.classList.remove('on'));btn.classList.add('on');document.querySelectorAll('.chant-item').forEach(item=>{item.style.display=(t==='전체'||item.dataset.team===t)?'flex':'none';});}
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>티켓 예매 가이드 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html" style="font-family:'KBO',sans-serif;font-weight:700">PLAYBALL</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>티켓 예매 가이드</h2>
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>티켓 예매 가이드</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+    <section class="inner-page">
+      <div class="container">
+
+        <style>
+          .step-list{display:flex;flex-direction:column;gap:0}
+          .step-item{display:flex;gap:24px;align-items:flex-start;padding-bottom:32px;position:relative}
+          .step-item::after{content:"";position:absolute;left:25px;top:52px;bottom:0;width:2px;background:#eee}
+          .step-item:last-child::after{display:none}
+          .step-num{width:52px;height:52px;border-radius:50%;background:#1bac91;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;flex-shrink:0;font-family:'KBO',sans-serif;position:relative;z-index:1}
+          .step-body{flex:1;padding-top:8px}
+          .step-body h4{font-size:18px;margin-bottom:8px}
+          .step-body p{font-size:14px;color:#666;line-height:1.8}
+          .step-tip{background:#f0fbf8;border-left:3px solid #1bac91;border-radius:0 8px 8px 0;padding:10px 14px;margin-top:12px;font-size:13px;color:#1bac91}
+          .site-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+          .site-card{background:#fff;border:1px solid #eee;border-radius:12px;padding:20px;text-align:center}
+          .site-card .si{font-size:32px;margin-bottom:10px}
+          .site-card h4{font-size:14px;margin-bottom:4px}
+          .site-card p{font-size:12px;color:#888}
+          @media(max-width:500px){.site-cards{grid-template-columns:1fr}}
+        </style>
+        <div class="section-title mb-5" data-aos="fade-up"><h2>티켓 예매 방법</h2><p>처음이라도 쉽게 따라할 수 있는 단계별 예매 가이드예요</p></div>
+        <div class="step-list">
+          <div class="step-item"><div class="step-num">1</div><div class="step-body"><h4>관람할 경기 선택</h4><p>KBO 공식 홈페이지 또는 각 구단 앱에서 경기 일정을 확인하고 관람할 경기를 선택하세요.</p><div class="step-tip">💡 주말 경기는 빨리 매진되니 1~2주 전에 예매하는 게 좋아요</div></div></div><div class="step-item"><div class="step-num">2</div><div class="step-body"><h4>예매 사이트 접속</h4><p>티켓링크, 인터파크, 구단 공식 앱 등 각 구단이 지정한 예매처를 이용해야 해요.</p><div class="step-tip">💡 구단마다 공식 예매처가 다를 수 있으니 구단 사이트에서 확인하세요</div></div></div><div class="step-item"><div class="step-num">3</div><div class="step-body"><h4>좌석 선택</h4><p>1루(홈팀), 3루(원정팀), 외야, 지정석 등 원하는 좌석을 선택하세요.</p><div class="step-tip">💡 처음 직관이라면 응원 분위기를 느낄 수 있는 외야석을 추천해요</div></div></div><div class="step-item"><div class="step-num">4</div><div class="step-body"><h4>결제 및 확인</h4><p>신용카드, 간편결제 등으로 결제 후 예매 확인 메일이나 앱에서 QR코드를 저장해두세요.</p><div class="step-tip">💡 당일 현장 수령보다 모바일 티켓이 빠르고 편해요</div></div></div>
+        </div>
+        <div class="section-title mb-5" data-aos="fade-up"><h2>주요 예매 사이트</h2></div>
+        <div class="site-cards">
+          <div class="site-card"><div class="si">🎟</div><h4>티켓링크</h4><p>다수 구단 공식 예매처</p></div><div class="site-card"><div class="si">🎫</div><h4>인터파크</h4><p>일부 구단 예매처</p></div><div class="site-card"><div class="si">📱</div><h4>구단 공식 앱</h4><p>각 구단 전용 앱</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
