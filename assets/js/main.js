@@ -170,6 +170,31 @@
   });
 
   /**
+   * Stadium slider
+   */
+  new Swiper('.stadiumSwiper', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.stadiumSwiper .swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.stadiumSwiper .swiper-button-next',
+      prevEl: '.stadiumSwiper .swiper-button-prev'
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, spaceBetween: 20 },
+      768: { slidesPerView: 2, spaceBetween: 20 },
+      1200: { slidesPerView: 3, spaceBetween: 30 }
+    }
+  });
+
+  /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {

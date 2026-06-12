@@ -1565,3 +1565,28 @@ section {
   line-height: 1.4;
   margin: 0;
 }
+/* ======= Stadium Swiper ======= */
+.stadium-swiper-wrapper {
+  position: relative;
+  padding: 0 50px 50px;
+}
+
+.stadiumSwiper .swiper-button-prev,
+.stadiumSwiper .swiper-button-next {
+  color: #e03a3c;
+}
+
+.stadiumSwiper .swiper-pagination-bullet-active {
+  background: #e03a3c;
+}
+
+.stadiumSwiper .member {
+  margin-bottom: 0;
+}
+
+.stadiumSwiper .member img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
