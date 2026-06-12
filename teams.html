@@ -78,11 +78,13 @@
           .team-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px;justify-content:center}
           .team-filter button{border:2px solid #ddd;background:#fff;padding:8px 22px;border-radius:50px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;font-family:'KBO',sans-serif}
           .team-filter button.on,.team-filter button:hover{border-color:#1bac91;color:#1bac91}
-          .teams-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+          .teams-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
           .team-card{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:block;text-decoration:none;color:inherit}
           .team-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(0,0,0,.1)}
-          .team-card .band{height:6px}
-          .team-card .body{padding:22px;display:flex;align-items:center;gap:16px}
+          .team-card .band{aspect-ratio:1/1;background-size:cover;background-position:center center;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
+          .team-card .band::after{content:'';position:absolute;inset:0;background:rgba(0,0,0,.25)}
+          .team-card .band .band-text{position:relative;z-index:1;text-align:center;color:#fff;font-weight:900;font-size:42px;line-height:1.1;letter-spacing:-1px;text-transform:uppercase;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+          .team-card .body{padding:18px 22px;display:flex;align-items:center;gap:16px}
           .team-badge{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
           .team-card h4{font-size:18px;margin-bottom:4px}
           .team-card .meta{font-size:12px;color:#999}
@@ -97,70 +99,70 @@
         <div class="teams-grid">
           
           <a href="team_details/team-detail_lg.html" class="team-card" data-region="수도권">
-            <div class="band" style="background:#c30452"></div>
+            <div class="band" style="background-color:#c30452;background-image:url('assets/img/teams/bg_LG.png')"><div class="band-text"><div>LG</div><div>TWINS</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#c30452">LG</div>
               <div><h4>LG 트윈스</h4><div class="meta">📍 서울 &nbsp;·&nbsp; 수도권</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_doosan.html" class="team-card" data-region="수도권">
-            <div class="band" style="background:#131230"></div>
+            <div class="band" style="background-color:#131230;background-image:url('assets/img/teams/bg_OB.png')"><div class="band-text"><div>DOOSAN</div><div>BEARS</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#131230">OB</div>
               <div><h4>두산 베어스</h4><div class="meta">📍 서울 &nbsp;·&nbsp; 수도권</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_kiwoom.html" class="team-card" data-region="수도권">
-            <div class="band" style="background:#570514"></div>
+            <div class="band" style="background-color:#570514;background-image:url('assets/img/teams/bg_WO.png')"><div class="band-text"><div>KIWOOM</div><div>HEROES</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#570514">키</div>
               <div><h4>키움 히어로즈</h4><div class="meta">📍 서울 &nbsp;·&nbsp; 수도권</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_ssg.html" class="team-card" data-region="수도권">
-            <div class="band" style="background:#ce0e2d"></div>
+            <div class="band" style="background-color:#ce0e2d;background-image:url('assets/img/teams/bg_SSG.png')"><div class="band-text"><div>SSG</div><div>Landers</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#ce0e2d">SSG</div>
               <div><h4>SSG 랜더스</h4><div class="meta">📍 인천 &nbsp;·&nbsp; 수도권</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_kt.html" class="team-card" data-region="수도권">
-            <div class="band" style="background:#000000"></div>
+            <div class="band" style="background-color:#000000;background-image:url('assets/img/teams/bg_KT.png')"><div class="band-text"><div>KT</div><div>WIZ</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#000000">KT</div>
               <div><h4>KT 위즈</h4><div class="meta">📍 수원 &nbsp;·&nbsp; 수도권</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_nc.html" class="team-card" data-region="영남">
-            <div class="band" style="background:#315288"></div>
+            <div class="band" style="background-color:#315288;background-image:url('assets/img/teams/bg_NC.png')"><div class="band-text"><div>NC</div><div>Dinos</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#315288">NC</div>
               <div><h4>NC 다이노스</h4><div class="meta">📍 창원 &nbsp;·&nbsp; 영남</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_lotte.html" class="team-card" data-region="영남">
-            <div class="band" style="background:#041e42"></div>
+            <div class="band" style="background-color:#041e42;background-image:url('assets/img/teams/bg_LT.png')"><div class="band-text"><div>LOTTE</div><div>Giants</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#041e42">롯</div>
               <div><h4>롯데 자이언츠</h4><div class="meta">📍 부산 &nbsp;·&nbsp; 영남</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_samsung.html" class="team-card" data-region="영남">
-            <div class="band" style="background:#074ca1"></div>
+            <div class="band" style="background-color:#074ca1;background-image:url('assets/img/teams/bg_SS.png')"><div class="band-text"><div>SAMSUNG</div><div>Lions</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#074ca1">삼</div>
               <div><h4>삼성 라이온즈</h4><div class="meta">📍 대구 &nbsp;·&nbsp; 영남</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_kia.html" class="team-card" data-region="호남·충청">
-            <div class="band" style="background:#ea0029"></div>
+            <div class="band" style="background-color:#ea0029;background-image:url('assets/img/teams/bg_HT.png')"><div class="band-text"><div>KIA</div><div>Tigers</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#ea0029">KIA</div>
               <div><h4>KIA 타이거즈</h4><div class="meta">📍 광주 &nbsp;·&nbsp; 호남·충청</div></div>
             </div>
           </a>
           <a href="team_details/team-detail_hanwha.html" class="team-card" data-region="호남·충청">
-            <div class="band" style="background:#fc4e00"></div>
+            <div class="band" style="background-color:#fc4e00;background-image:url('assets/img/teams/bg_HH.png')"><div class="band-text"><div>HANWHA</div><div>Eagles</div></div></div>
             <div class="body">
               <div class="team-badge" style="background:#fc4e00">한</div>
               <div><h4>한화 이글스</h4><div class="meta">📍 대전 &nbsp;·&nbsp; 호남·충청</div></div>

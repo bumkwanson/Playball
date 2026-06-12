@@ -78,7 +78,8 @@
           .about-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:60px}
           .about-split:nth-child(even){direction:rtl}
           .about-split:nth-child(even) .about-body{direction:ltr}
-          .about-img-ph{background:#f4f4f4;border-radius:12px;height:280px;display:flex;align-items:center;justify-content:center;color:#aaa;border:1px dashed #ddd}
+          .about-img-ph{border-radius:12px;height:280px;overflow:hidden}
+          .about-img-ph img{width:100%;height:100%;object-fit:cover;border-radius:12px}
           .about-body h3{font-size:26px;margin-bottom:16px}
           .about-body p{font-size:15px;color:#666;line-height:1.9}
           .value-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
@@ -89,7 +90,7 @@
           @media(max-width:768px){.about-split,.value-row{grid-template-columns:1fr}.about-split:nth-child(even){direction:ltr}}
         </style>
         <div class="about-split">
-          <div class="about-img-ph">[ 소개 이미지 ]</div>
+          <div class="about-img-ph"><img src="assets/img/about-img.jpg" alt="PLAYBALL 소개"></div>
           <div class="about-body">
             <h3>PLAYBALL이란?</h3>
             <p>KBO 야구 입문자가 자신에게 맞는 팀을 찾고, 직관을 제대로 즐길 수 있도록 돕는 종합 가이드 사이트입니다.</p>
@@ -102,7 +103,7 @@
             <p>KBO 관중 수는 매년 역대 최다를 경신하고 있지만, 처음 야구에 관심이 생긴 입문자가 "어느 팀을 응원해야 하는지"부터 막히는 경우가 많아요.</p>
             <p>PLAYBALL은 팀 선택 이전 단계부터 직관 당일까지 모든 과정을 함께 안내합니다.</p>
           </div>
-          <div class="about-img-ph">[ 이미지 ]</div>
+          <div class="about-img-ph"><img src="assets/img/stadium/lg.jpg" alt="야구장 직관"></div>
         </div>
         <div class="value-row">
           <div class="value-card"><i class="bx bx-target-lock"></i><h4>입문자 중심</h4><p>야구를 전혀 몰라도 이해할 수 있는 쉬운 설명</p></div>

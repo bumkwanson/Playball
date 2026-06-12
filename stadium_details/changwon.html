@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>창원NC파크 — 구장 가이드 — PLAYBALL</title>
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    .mag-hero{position:relative;height:500px;overflow:hidden}.mag-hero img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
+    .mag-hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 48px}
+    .mag-accent{width:60px;height:4px;margin-bottom:16px}.mag-issue{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.7);margin-bottom:8px;text-transform:uppercase}
+    .mag-title{font-size:56px;font-weight:900;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:10px}.mag-team{font-size:14px;color:rgba(255,255,255,.8);letter-spacing:1px}
+    .mag-cap{position:absolute;right:48px;bottom:40px;text-align:right}.mag-cap .num{font-size:64px;font-weight:900;color:#fff;line-height:1}.mag-cap .lbl{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase}
+    .intro-grid{display:grid;grid-template-columns:240px 1px 1fr;gap:0 40px;padding:48px 0;border-bottom:1px solid #eee;margin-bottom:48px}
+    .intro-meta .m-row{padding:14px 0;border-bottom:1px solid #f0f0f0}.intro-meta .m-row:last-child{border:none}
+    .intro-meta .mk{font-size:10px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-bottom:4px}.intro-meta .mv{font-size:14px;font-weight:700;color:#222}
+    .intro-divider{background:#eee}.intro-body{padding-left:40px}
+    .intro-body .drop{font-size:56px;font-weight:900;float:left;line-height:.85;margin-right:8px;margin-top:4px}
+    .intro-body p{font-size:15px;line-height:1.95;color:#444;margin-bottom:16px}.intro-body p:last-child{margin-bottom:0}
+    .stat-strip{background:#111;color:#fff;padding:40px 0;margin-bottom:48px}
+    .stat-strip .inner{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;max-width:1200px;margin:0 auto;padding:0 20px}
+    .stat-item{padding:0 20px;border-right:1px solid #333}.stat-item:last-child{border:none}
+    .stat-num{font-size:52px;font-weight:900;line-height:1;margin-bottom:6px}.stat-lbl{font-size:11px;letter-spacing:2px;color:#999;text-transform:uppercase}
+    .section-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#aaa;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #111;font-weight:700}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+    .feature-card{background:#f9f9f9;border-radius:12px;padding:28px}.feature-card .fi{font-size:32px;margin-bottom:14px}
+    .feature-card h5{font-size:15px;font-weight:700;margin-bottom:8px;color:#111}.feature-card p{font-size:13px;color:#777;line-height:1.7;margin:0}
+    .seat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:48px}
+    .seat-card{border:1px solid #eee;border-radius:12px;padding:22px;display:flex;gap:16px;align-items:flex-start}
+    .seat-badge{min-width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;text-align:center;line-height:1.2;flex-shrink:0}
+    .seat-info h5{font-size:14px;font-weight:700;margin-bottom:4px}.seat-info p{font-size:12px;color:#888;margin:0;line-height:1.6}.seat-price{font-size:13px;font-weight:700;color:#1bac91;margin-top:4px}
+    .access-section{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px}
+    .access-card{border:1px solid #eee;border-radius:12px;padding:28px}
+    .access-card h5{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:20px;font-weight:700}
+    .access-item{display:flex;gap:12px;margin-bottom:16px;font-size:14px}.access-item:last-child{margin-bottom:0}.access-item .ai{font-size:20px;flex-shrink:0}.access-item .at{color:#444;line-height:1.6}
+    .pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+    .pick-card{padding:24px;border:1px solid #eee;border-radius:12px}.pick-card .pe{font-size:36px;margin-bottom:12px}
+    .pick-card h5{font-size:15px;font-weight:700;margin-bottom:6px}.pick-card p{font-size:13px;color:#888;line-height:1.6;margin:0}
+    .mag-nav{display:grid;grid-template-columns:1fr 1fr;background:#f8f8f8;margin-top:40px}
+    .mag-nav a{padding:32px 40px;text-decoration:none;color:#222;transition:background .2s}.mag-nav a:hover{background:#f0f0f0}
+    .mag-nav .mn-dir{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:8px}.mag-nav .mn-name{font-size:18px;font-weight:700}
+    .mag-nav a:last-child{text-align:right;border-left:1px solid #e0e0e0}
+    @media(max-width:768px){.mag-title{font-size:36px}.mag-cap .num{font-size:40px}.intro-grid{grid-template-columns:1fr}.intro-divider{display:none}.intro-body{padding-left:0;padding-top:24px}.stat-strip .inner{grid-template-columns:1fr;gap:20px}.stat-item{border:none;border-bottom:1px solid #333;padding:20px}.feature-grid,.seat-grid,.access-section,.pick-grid{grid-template-columns:1fr}.mag-nav{grid-template-columns:1fr}.mag-nav a:last-child{border-left:none;border-top:1px solid #e0e0e0;text-align:left}}
+  </style>
+</head>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo"><h1><a href="../index.html"><img src="../assets/img/logo.svg" alt="logo" style="height:33px;margin-right:8px;vertical-align:middle;">PLAY<span style="color:#e00;">BALL</span></a></h1></div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="../index.html">홈</a></li><li><a class="nav-link" href="../about.html">소개</a></li><li><a class="nav-link" href="../quiz.html">팀 찾기</a></li><li><a class="nav-link" href="../teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../chants.html">응원가 모음</a></li><li><a href="../goods.html">굿즈·유니폼</a></li></ul></li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../stadiums.html">구장 가이드</a></li><li><a href="../food.html">구장별 먹거리</a></li><li><a href="../ticket.html">티켓 예매</a></li><li><a href="../checklist.html">직관 준비물</a></li><li><a href="../dayguide.html">직관 당일 가이드</a></li></ul></li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../rules.html">야구 기초 규칙</a></li><li><a href="../positions.html">포지션 소개</a></li><li><a href="../glossary.html">야구 용어 사전</a></li><li><a href="../derby.html">라이벌전·더비</a></li></ul></li>
+          <li><a class="nav-link" href="../contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="breadcrumbs"><div class="container"><div class="d-flex justify-content-between align-items-center"><h2>창원NC파크</h2><ol><li><a href="../stadiums.html">구장 가이드</a></li><li>창원NC파크</li></ol></div></div></section>
+
+    <div class="mag-hero">
+      <img src="../assets/img/stadium/NC.jpg" alt="창원NC파크">
+      <div class="mag-hero-overlay">
+        <div class="mag-accent" style="background:#315288;"></div>
+        <div class="mag-issue">KBO Stadium Guide · Changwon</div>
+        <div class="mag-title">CHANGWON</div>
+        <div class="mag-team">NC 다이노스</div>
+      </div>
+      <div class="mag-cap"><div class="num">22,112</div><div class="lbl">Capacity</div></div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="inner">
+        <div class="stat-item"><div class="stat-num" style="color:#315288;">22,112</div><div class="stat-lbl">Capacity</div></div>
+        <div class="stat-item"><div class="stat-num" style="color:#315288;">2019</div><div class="stat-lbl">Opened</div></div>
+        <div class="stat-item"><div class="stat-num" style="color:#315288;">KBO</div><div class="stat-lbl">Most Beautiful Park</div></div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom:64px;">
+      <div class="intro-grid">
+        <div class="intro-meta">
+          <div class="m-row"><div class="mk">개장연도</div><div class="mv">2019년</div></div>
+          <div class="m-row"><div class="mk">구장 유형</div><div class="mv">야외 개방형</div></div>
+          <div class="m-row"><div class="mk">잔디</div><div class="mv">천연잔디</div></div>
+          <div class="m-row"><div class="mk">위치</div><div class="mv">경남 창원시 마산회원구</div></div>
+          <div class="m-row"><div class="mk">수용 인원</div><div class="mv">22,112명</div></div>
+          <div class="m-row"><div class="mk">홈 구단</div><div class="mv">NC 다이노스</div></div>
+          <div class="m-row"><div class="mk">별명</div><div class="mv">KBO 가장 예쁜 구장</div></div>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-body">
+          <p><span class="drop" style="color:#315288;">창</span>원NC파크는 2019년에 개장한 KBO 최신 구장 중 하나로, 경상남도 창원시 마산회원구에 위치합니다. 야구 팬들 사이에서 'KBO에서 가장 예쁜 구장'이라는 별명을 얻을 만큼 세련된 외관과 최신 시설을 자랑합니다.</p>
+          <p>NC 다이노스 게임 회사(엔씨소프트)의 지원 아래 구장 곳곳에 디지털 기술이 접목되어 있으며, 선수 및 경기 관련 데이터를 구장 내 다양한 디스플레이에서 확인할 수 있습니다. 최신형 LED 전광판과 쾌적한 관람 환경이 관람 경험의 질을 높여줍니다.</p>
+          <p>창원 지역의 유일한 KBO 구장으로서 마산·창원·진해 지역 팬들의 구심점이 되고 있습니다. 구장 인근에는 마산 어시장 등 창원 지역 명소가 있어 경기 전후로 관광과 연계하기도 좋습니다.</p>
+        </div>
+      </div>
+
+      <div class="section-label">Stadium Features — 구장 특징</div>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="fi">✨</div><h5>KBO 최고 미관</h5><p>2019년 개장한 최신 구장으로 세련된 디자인과 조명이 KBO에서 가장 아름다운 구장으로 손꼽힙니다.</p></div>
+        <div class="feature-card"><div class="fi">💻</div><h5>디지털 기술 접목</h5><p>NC소프트 그룹 특유의 IT 기술이 구장에 접목되어, 경기 데이터와 콘텐츠를 풍성하게 즐길 수 있습니다.</p></div>
+        <div class="feature-card"><div class="fi">🎯</div><h5>최신 LED 전광판</h5><p>대형 고해상도 LED 전광판이 설치되어 생생한 리플레이와 다양한 이벤트 영상을 제공합니다.</p></div>
+        <div class="feature-card"><div class="fi">🌊</div><h5>바다 인접 위치</h5><p>마산 해안가 인근에 위치해 바닷바람을 느끼며 야구를 즐길 수 있는 독특한 경험을 선사합니다.</p></div>
+        <div class="feature-card"><div class="fi">🦕</div><h5>공룡 테마 구장</h5><p>NC 다이노스(공룡)를 모티프로 한 독특한 캐릭터와 스토리텔링이 구장 곳곳에 녹아 있습니다.</p></div>
+        <div class="feature-card"><div class="fi">🛍️</div><h5>다양한 굿즈·MD</h5><p>구장 내 공식 MD샵에서 NC 다이노스 굿즈를 다양하게 구매할 수 있습니다.</p></div>
+      </div>
+
+      <div class="section-label">Seating Guide — 좌석 안내</div>
+      <div class="seat-grid">
+        <div class="seat-card"><div class="seat-badge" style="background:#315288;">프리<br>미엄</div><div class="seat-info"><h5>프리미엄 테이블석</h5><p>최신 시설의 프리미엄 좌석. 넓은 테이블과 함께 최고의 시야를 제공합니다.</p><div class="seat-price">₩ 50,000~75,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#1a3a6b;">내야<br>지정석</div><div class="seat-info"><h5>내야 지정석</h5><p>1루·3루 라인 내야석. 경기의 모든 플레이를 가까이서 볼 수 있습니다.</p><div class="seat-price">₩ 13,000~18,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#4a6fa5;">외야<br>응원석</div><div class="seat-info"><h5>외야 응원석</h5><p>NC 응원단의 열기를 함께 느낄 수 있는 외야 응원석. 가성비가 뛰어납니다.</p><div class="seat-price">₩ 9,000~11,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#555;">중앙<br>지정석</div><div class="seat-info"><h5>중앙 지정석</h5><p>포수 뒤 중앙에서 전체 경기를 균형 있게 감상할 수 있는 입문자 추천 좌석입니다.</p><div class="seat-price">₩ 13,000~16,000</div></div></div>
+      </div>
+
+      <div class="section-label">Access — 오시는 길</div>
+      <div class="access-section">
+        <div class="access-card">
+          <h5>교통편</h5>
+          <div class="access-item"><span class="ai">🚌</span><span class="at"><strong>버스</strong><br>창원·마산 방면 버스 — NC파크 하차</span></div>
+          <div class="access-item"><span class="ai">🚂</span><span class="at"><strong>기차</strong><br>마산역 하차 후 택시 또는 버스 이용 (약 15분)</span></div>
+          <div class="access-item"><span class="ai">🚕</span><span class="at"><strong>택시</strong><br>"창원NC파크" 검색 — 정문 앞 하차</span></div>
+        </div>
+        <div class="access-card">
+          <h5>주차 &amp; 현장 팁</h5>
+          <div class="access-item"><span class="ai">🚗</span><span class="at"><strong>주차</strong><br>구장 내 주차장 이용 가능, 경기일 혼잡 예상</span></div>
+          <div class="access-item"><span class="ai">⏰</span><span class="at"><strong>도착 시간</strong><br>경기 1시간 30분 전 도착 권장</span></div>
+          <div class="access-item"><span class="ai">💡</span><span class="at"><strong>꿀팁</strong><br>경기 후 마산어시장 방문 추천. 신선한 해산물을 맛볼 수 있습니다.</span></div>
+        </div>
+      </div>
+
+      <div class="section-label">Stadium Pick — 이 구장의 추천 먹거리</div>
+      <div class="pick-grid">
+        <div class="pick-card"><div class="pe">🦑</div><h5>오징어구이</h5><p>마산 인근 해산물의 영향으로 구장 내 해물 간식이 풍성합니다. 오징어구이는 꼭 드셔보세요.</p></div>
+        <div class="pick-card"><div class="pe">🍗</div><h5>치킨</h5><p>구장 내 다양한 치킨 메뉴. 최신 구장답게 다양한 브랜드가 입점해 있습니다.</p></div>
+        <div class="pick-card"><div class="pe">🍱</div><h5>컵밥·도시락</h5><p>간편하게 즐길 수 있는 컵밥과 도시락 메뉴가 다양하게 준비되어 있습니다.</p></div>
+        <div class="pick-card"><div class="pe">🍺</div><h5>맥주</h5><p>바닷바람을 맞으며 마시는 맥주 한 잔. 창원NC파크 직관의 특별한 묘미입니다.</p></div>
+        <div class="pick-card"><div class="pe">🍢</div><h5>어묵꼬치</h5><p>마산 어묵의 명성을 잇는 어묵꼬치. 구장 내에서도 쉽게 만날 수 있습니다.</p></div>
+        <div class="pick-card"><div class="pe">🧃</div><h5>음료·스낵</h5><p>팝콘, 나초 등 다양한 스낵류와 음료가 매점에서 판매됩니다.</p></div>
+      </div>
+    </div>
+
+    <div class="mag-nav">
+      <a href="suwon.html"><div class="mn-dir">← 이전</div><div class="mn-name">수원 KT위즈파크</div></a>
+      <a href="sajik.html"><div class="mn-dir">다음 →</div><div class="mn-name">사직야구장</div></a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top"><div class="container"><div class="row">
+      <div class="col-lg-3 col-md-6"><div class="footer-info"><h3>PLAYBALL</h3><p>KBO 야구 직관 입문 가이드<br><br><strong>Team:</strong> 리싸인<br><strong>Members:</strong> 손범관 · 전우빈</p></div></div>
+      <div class="col-lg-2 col-md-6 footer-links"><h4>메뉴</h4><ul><li><i class="bx bx-chevron-right"></i><a href="../index.html">홈</a></li><li><i class="bx bx-chevron-right"></i><a href="../about.html">사이트 소개</a></li><li><i class="bx bx-chevron-right"></i><a href="../quiz.html">팀 찾기</a></li><li><i class="bx bx-chevron-right"></i><a href="../teams.html">구단 목록</a></li><li><i class="bx bx-chevron-right"></i><a href="../contact.html">문의</a></li></ul></div>
+      <div class="col-lg-3 col-md-6 footer-links"><h4>직관 가이드</h4><ul><li><i class="bx bx-chevron-right"></i><a href="../stadiums.html">구장 가이드</a></li><li><i class="bx bx-chevron-right"></i><a href="../ticket.html">티켓 예매</a></li><li><i class="bx bx-chevron-right"></i><a href="../checklist.html">직관 준비물</a></li><li><i class="bx bx-chevron-right"></i><a href="../rules.html">야구 규칙</a></li><li><i class="bx bx-chevron-right"></i><a href="../glossary.html">용어 사전</a></li></ul></div>
+      <div class="col-lg-4 col-md-6 footer-newsletter"><h4>중앙대학교</h4><p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p></div>
+    </div></div></div>
+    <div class="container"><div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div></div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="../assets/vendor/aos/aos.js"></script><script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="../assets/vendor/glightbox/js/glightbox.min.js"></script><script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script><script src="../assets/vendor/swiper/swiper-bundle.min.js"></script><script src="../assets/js/main.js"></script>
+</body>
+</html>

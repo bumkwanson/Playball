@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>사직야구장 — 구장 가이드 — PLAYBALL</title>
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <style>
+    .mag-hero{position:relative;height:500px;overflow:hidden}.mag-hero img{width:100%;height:100%;object-fit:cover;filter:brightness(.5)}
+    .mag-hero-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 48px}
+    .mag-accent{width:60px;height:4px;margin-bottom:16px}.mag-issue{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.7);margin-bottom:8px;text-transform:uppercase}
+    .mag-title{font-size:56px;font-weight:900;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:10px}.mag-team{font-size:14px;color:rgba(255,255,255,.8);letter-spacing:1px}
+    .mag-cap{position:absolute;right:48px;bottom:40px;text-align:right}.mag-cap .num{font-size:64px;font-weight:900;color:#fff;line-height:1}.mag-cap .lbl{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase}
+    .intro-grid{display:grid;grid-template-columns:240px 1px 1fr;gap:0 40px;padding:48px 0;border-bottom:1px solid #eee;margin-bottom:48px}
+    .intro-meta .m-row{padding:14px 0;border-bottom:1px solid #f0f0f0}.intro-meta .m-row:last-child{border:none}
+    .intro-meta .mk{font-size:10px;letter-spacing:2px;color:#aaa;text-transform:uppercase;margin-bottom:4px}.intro-meta .mv{font-size:14px;font-weight:700;color:#222}
+    .intro-divider{background:#eee}.intro-body{padding-left:40px}
+    .intro-body .drop{font-size:56px;font-weight:900;float:left;line-height:.85;margin-right:8px;margin-top:4px}
+    .intro-body p{font-size:15px;line-height:1.95;color:#444;margin-bottom:16px}.intro-body p:last-child{margin-bottom:0}
+    .stat-strip{background:#111;color:#fff;padding:40px 0;margin-bottom:48px}
+    .stat-strip .inner{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;max-width:1200px;margin:0 auto;padding:0 20px}
+    .stat-item{padding:0 20px;border-right:1px solid #333}.stat-item:last-child{border:none}
+    .stat-num{font-size:52px;font-weight:900;line-height:1;margin-bottom:6px}.stat-lbl{font-size:11px;letter-spacing:2px;color:#999;text-transform:uppercase}
+    .section-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#aaa;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #111;font-weight:700}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+    .feature-card{background:#f9f9f9;border-radius:12px;padding:28px}.feature-card .fi{font-size:32px;margin-bottom:14px}
+    .feature-card h5{font-size:15px;font-weight:700;margin-bottom:8px;color:#111}.feature-card p{font-size:13px;color:#777;line-height:1.7;margin:0}
+    .seat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:48px}
+    .seat-card{border:1px solid #eee;border-radius:12px;padding:22px;display:flex;gap:16px;align-items:flex-start}
+    .seat-badge{min-width:52px;height:52px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;text-align:center;line-height:1.2;flex-shrink:0}
+    .seat-info h5{font-size:14px;font-weight:700;margin-bottom:4px}.seat-info p{font-size:12px;color:#888;margin:0;line-height:1.6}.seat-price{font-size:13px;font-weight:700;color:#1bac91;margin-top:4px}
+    .access-section{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px}
+    .access-card{border:1px solid #eee;border-radius:12px;padding:28px}
+    .access-card h5{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:20px;font-weight:700}
+    .access-item{display:flex;gap:12px;margin-bottom:16px;font-size:14px}.access-item:last-child{margin-bottom:0}.access-item .ai{font-size:20px;flex-shrink:0}.access-item .at{color:#444;line-height:1.6}
+    .pick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px}
+    .pick-card{padding:24px;border:1px solid #eee;border-radius:12px}.pick-card .pe{font-size:36px;margin-bottom:12px}
+    .pick-card h5{font-size:15px;font-weight:700;margin-bottom:6px}.pick-card p{font-size:13px;color:#888;line-height:1.6;margin:0}
+    .mag-nav{display:grid;grid-template-columns:1fr 1fr;background:#f8f8f8;margin-top:40px}
+    .mag-nav a{padding:32px 40px;text-decoration:none;color:#222;transition:background .2s}.mag-nav a:hover{background:#f0f0f0}
+    .mag-nav .mn-dir{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#aaa;margin-bottom:8px}.mag-nav .mn-name{font-size:18px;font-weight:700}
+    .mag-nav a:last-child{text-align:right;border-left:1px solid #e0e0e0}
+    @media(max-width:768px){.mag-title{font-size:36px}.mag-cap .num{font-size:40px}.intro-grid{grid-template-columns:1fr}.intro-divider{display:none}.intro-body{padding-left:0;padding-top:24px}.stat-strip .inner{grid-template-columns:1fr;gap:20px}.stat-item{border:none;border-bottom:1px solid #333;padding:20px}.feature-grid,.seat-grid,.access-section,.pick-grid{grid-template-columns:1fr}.mag-nav{grid-template-columns:1fr}.mag-nav a:last-child{border-left:none;border-top:1px solid #e0e0e0;text-align:left}}
+  </style>
+</head>
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo"><h1><a href="../index.html"><img src="../assets/img/logo.svg" alt="logo" style="height:33px;margin-right:8px;vertical-align:middle;">PLAY<span style="color:#e00;">BALL</span></a></h1></div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="../index.html">홈</a></li><li><a class="nav-link" href="../about.html">소개</a></li><li><a class="nav-link" href="../quiz.html">팀 찾기</a></li><li><a class="nav-link" href="../teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../chants.html">응원가 모음</a></li><li><a href="../goods.html">굿즈·유니폼</a></li></ul></li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../stadiums.html">구장 가이드</a></li><li><a href="../food.html">구장별 먹거리</a></li><li><a href="../ticket.html">티켓 예매</a></li><li><a href="../checklist.html">직관 준비물</a></li><li><a href="../dayguide.html">직관 당일 가이드</a></li></ul></li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a><ul><li><a href="../rules.html">야구 기초 규칙</a></li><li><a href="../positions.html">포지션 소개</a></li><li><a href="../glossary.html">야구 용어 사전</a></li><li><a href="../derby.html">라이벌전·더비</a></li></ul></li>
+          <li><a class="nav-link" href="../contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="breadcrumbs"><div class="container"><div class="d-flex justify-content-between align-items-center"><h2>사직야구장</h2><ol><li><a href="../stadiums.html">구장 가이드</a></li><li>사직야구장</li></ol></div></div></section>
+
+    <div class="mag-hero">
+      <img src="../assets/img/stadium/lotte.jpg" alt="사직야구장">
+      <div class="mag-hero-overlay">
+        <div class="mag-accent" style="background:#041e42;"></div>
+        <div class="mag-issue">KBO Stadium Guide · Busan</div>
+        <div class="mag-title">SAJIK</div>
+        <div class="mag-team">롯데 자이언츠</div>
+      </div>
+      <div class="mag-cap"><div class="num">23,500</div><div class="lbl">Capacity</div></div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="inner">
+        <div class="stat-item"><div class="stat-num" style="color:#e63b2e;">23,500</div><div class="stat-lbl">Capacity</div></div>
+        <div class="stat-item"><div class="stat-num" style="color:#e63b2e;">1985</div><div class="stat-lbl">Opened</div></div>
+        <div class="stat-item"><div class="stat-num" style="color:#e63b2e;">부산</div><div class="stat-lbl">Baseball Capital</div></div>
+      </div>
+    </div>
+
+    <div class="container" style="padding-bottom:64px;">
+      <div class="intro-grid">
+        <div class="intro-meta">
+          <div class="m-row"><div class="mk">개장연도</div><div class="mv">1985년</div></div>
+          <div class="m-row"><div class="mk">구장 유형</div><div class="mv">야외 개방형</div></div>
+          <div class="m-row"><div class="mk">잔디</div><div class="mv">천연잔디</div></div>
+          <div class="m-row"><div class="mk">위치</div><div class="mv">부산 동래구</div></div>
+          <div class="m-row"><div class="mk">수용 인원</div><div class="mv">23,500명</div></div>
+          <div class="m-row"><div class="mk">홈 구단</div><div class="mv">롯데 자이언츠</div></div>
+          <div class="m-row"><div class="mk">별명</div><div class="mv">부산 응원 성지</div></div>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-body">
+          <p><span class="drop" style="color:#041e42;">사</span>직야구장은 1985년에 개장한 부산 동래구의 롯데 자이언츠 홈구장입니다. 부산 시민들에게 가장 사랑받는 스포츠 성지로, 40년에 가까운 역사 동안 수많은 명경기를 탄생시킨 곳입니다.</p>
+          <p>롯데 팬들의 응원은 KBO에서도 전설적으로 유명합니다. 특히 3루 외야석의 '갈매기 응원'은 전국적으로 알려진 문화 현상이 되었으며, 경기 결과와 관계없이 항상 열정적인 응원이 이어집니다. 부산이라는 도시의 정서와 야구가 가장 잘 결합된 구장으로 평가받습니다.</p>
+          <p>구장 인근의 3호선 사직역에서 도보로 이동 가능하며, 경기 후 부산 명물인 해운대, 광안리, 국제시장 등을 함께 즐기기에도 좋은 위치입니다. 사직 야구장 주변 골목의 포장마차와 노점들도 직관의 풍경 중 하나입니다.</p>
+        </div>
+      </div>
+
+      <div class="section-label">Stadium Features — 구장 특징</div>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="fi">🐦</div><h5>갈매기 응원</h5><p>'부산 갈매기' 응원은 KBO에서 가장 유명한 팀 응원 문화 중 하나. 사직에서만 느낄 수 있는 특별한 경험입니다.</p></div>
+        <div class="feature-card"><div class="fi">🏙️</div><h5>부산의 랜드마크</h5><p>롯데 자이언츠와 사직야구장은 부산 문화의 일부입니다. 부산 여행 시 꼭 들러야 할 명소 중 하나입니다.</p></div>
+        <div class="feature-card"><div class="fi">🌟</div><h5>40년 역사의 명경기</h5><p>수많은 KBO 역대 명경기가 탄생한 유서 깊은 구장. 야구 역사의 숨결을 느낄 수 있습니다.</p></div>
+        <div class="feature-card"><div class="fi">🚇</div><h5>지하철 연결</h5><p>3호선 사직역에서 도보로 이동 가능. 부산 어디서든 지하철로 편하게 올 수 있습니다.</p></div>
+        <div class="feature-card"><div class="fi">🌊</div><h5>부산 여행 연계</h5><p>해운대, 광안리, 남포동 등 부산 명소들과 연계해 야구와 여행을 동시에 즐길 수 있습니다.</p></div>
+        <div class="feature-card"><div class="fi">🍻</div><h5>경기 후 뒤풀이 성지</h5><p>구장 주변 포장마차와 식당가에서 경기 후 팬들의 뒤풀이 문화가 이어집니다.</p></div>
+      </div>
+
+      <div class="section-label">Seating Guide — 좌석 안내</div>
+      <div class="seat-grid">
+        <div class="seat-card"><div class="seat-badge" style="background:#041e42;">프리<br>미엄</div><div class="seat-info"><h5>프리미엄 테이블석</h5><p>내야 최상급 좌석. 롯데 자이언츠의 홈 경기를 가장 쾌적하게 관람할 수 있습니다.</p><div class="seat-price">₩ 45,000~65,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#1a3a5c;">내야<br>지정석</div><div class="seat-info"><h5>내야 지정석</h5><p>1루·3루 내야석. 경기를 가까이에서 관람하기 좋은 인기 좌석입니다.</p><div class="seat-price">₩ 12,000~17,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#e63b2e;">외야<br>응원석</div><div class="seat-info"><h5>외야 응원석 (갈매기석)</h5><p>전설의 '갈매기 응원'이 펼쳐지는 3루 외야석. 사직 직관의 진수를 맛볼 수 있습니다.</p><div class="seat-price">₩ 9,000~11,000</div></div></div>
+        <div class="seat-card"><div class="seat-badge" style="background:#555;">중앙<br>지정석</div><div class="seat-info"><h5>중앙 지정석</h5><p>포수 뒤 중앙에서 전체 경기를 균형 있게 감상할 수 있습니다.</p><div class="seat-price">₩ 12,000~15,000</div></div></div>
+      </div>
+
+      <div class="section-label">Access — 오시는 길</div>
+      <div class="access-section">
+        <div class="access-card">
+          <h5>교통편</h5>
+          <div class="access-item"><span class="ai">🚇</span><span class="at"><strong>지하철</strong><br>3호선 사직역 1번 출구 도보 5분</span></div>
+          <div class="access-item"><span class="ai">🚌</span><span class="at"><strong>버스</strong><br>동래 방면 버스 — 사직야구장 하차</span></div>
+          <div class="access-item"><span class="ai">🚕</span><span class="at"><strong>택시</strong><br>"사직야구장" 검색 — 정문 앞 하차</span></div>
+        </div>
+        <div class="access-card">
+          <h5>주차 &amp; 현장 팁</h5>
+          <div class="access-item"><span class="ai">🚗</span><span class="at"><strong>주차</strong><br>구장 인근 주차장 이용, 경기일은 매우 혼잡하므로 대중교통 추천</span></div>
+          <div class="access-item"><span class="ai">⏰</span><span class="at"><strong>도착 시간</strong><br>경기 1시간 30분 전 도착 권장</span></div>
+          <div class="access-item"><span class="ai">💡</span><span class="at"><strong>꿀팁</strong><br>경기 후 해운대·광안리 해변이나 남포동 국제시장 방문 추천</span></div>
+        </div>
+      </div>
+
+      <div class="section-label">Stadium Pick — 이 구장의 추천 먹거리</div>
+      <div class="pick-grid">
+        <div class="pick-card"><div class="pe">🐟</div><h5>씨앗호떡</h5><p>부산 명물 씨앗호떡은 사직 주변 노점에서도 만날 수 있습니다. 경기 전 줄 서서 먹는 재미가 있습니다.</p></div>
+        <div class="pick-card"><div class="pe">🍗</div><h5>치킨</h5><p>구장 내 치킨 부스에서 갓 나온 치킨을 맥주와 함께. 롯데 팬들의 응원에 힘을 더해줍니다.</p></div>
+        <div class="pick-card"><div class="pe">🍱</div><h5>컵밥·도시락</h5><p>간편하게 한 끼 해결할 수 있는 컵밥 메뉴가 다양합니다. 경기 집중에 방해 없는 선택입니다.</p></div>
+        <div class="pick-card"><div class="pe">🍺</div><h5>맥주</h5><p>부산 사나이처럼 시원한 맥주 한 잔. 갈매기 응원과 함께하면 더욱 특별합니다.</p></div>
+        <div class="pick-card"><div class="pe">🥜</div><h5>땅콩·오징어</h5><p>야구장의 고전 간식. 경기를 보며 손으로 까먹는 소소한 즐거움이 있습니다.</p></div>
+        <div class="pick-card"><div class="pe">🍢</div><h5>어묵국</h5><p>부산의 자랑, 어묵! 따뜻한 어묵국 한 그릇은 가을 야구의 필수 아이템입니다.</p></div>
+      </div>
+    </div>
+
+    <div class="mag-nav">
+      <a href="changwon.html"><div class="mn-dir">← 이전</div><div class="mn-name">창원NC파크</div></a>
+      <a href="daegu.html"><div class="mn-dir">다음 →</div><div class="mn-name">대구삼성라이온즈파크</div></a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top"><div class="container"><div class="row">
+      <div class="col-lg-3 col-md-6"><div class="footer-info"><h3>PLAYBALL</h3><p>KBO 야구 직관 입문 가이드<br><br><strong>Team:</strong> 리싸인<br><strong>Members:</strong> 손범관 · 전우빈</p></div></div>
+      <div class="col-lg-2 col-md-6 footer-links"><h4>메뉴</h4><ul><li><i class="bx bx-chevron-right"></i><a href="../index.html">홈</a></li><li><i class="bx bx-chevron-right"></i><a href="../about.html">사이트 소개</a></li><li><i class="bx bx-chevron-right"></i><a href="../quiz.html">팀 찾기</a></li><li><i class="bx bx-chevron-right"></i><a href="../teams.html">구단 목록</a></li><li><i class="bx bx-chevron-right"></i><a href="../contact.html">문의</a></li></ul></div>
+      <div class="col-lg-3 col-md-6 footer-links"><h4>직관 가이드</h4><ul><li><i class="bx bx-chevron-right"></i><a href="../stadiums.html">구장 가이드</a></li><li><i class="bx bx-chevron-right"></i><a href="../ticket.html">티켓 예매</a></li><li><i class="bx bx-chevron-right"></i><a href="../checklist.html">직관 준비물</a></li><li><i class="bx bx-chevron-right"></i><a href="../rules.html">야구 규칙</a></li><li><i class="bx bx-chevron-right"></i><a href="../glossary.html">용어 사전</a></li></ul></div>
+      <div class="col-lg-4 col-md-6 footer-newsletter"><h4>중앙대학교</h4><p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p></div>
+    </div></div></div>
+    <div class="container"><div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div></div>
+  </footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="../assets/vendor/aos/aos.js"></script><script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="../assets/vendor/glightbox/js/glightbox.min.js"></script><script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script><script src="../assets/vendor/swiper/swiper-bundle.min.js"></script><script src="../assets/js/main.js"></script>
+</body>
+</html>
