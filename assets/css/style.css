@@ -1609,10 +1609,11 @@ section {
 }
 
 .stadiumSwiper .member .member-info-content h4 {
-  font-size: 17px;
+  font-size: 22px;
   margin-bottom: 4px;
 }
 
 .stadiumSwiper .member .member-info-content span {
   font-size: 13px;
+  font-style: normal;
 }
