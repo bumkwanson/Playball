@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>투수 주요 선수 — PLAYBALL</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+</head>
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+      <div class="logo">
+        <h1><a href="index.html"><img src="assets/img/logo.svg" alt="logo" style="height:33px; margin-right:8px; vertical-align:middle;">PLAY<span style="color:#e00;">BALL</span></a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">홈</a></li>
+          <li><a class="nav-link" href="about.html">소개</a></li>
+          <li><a class="nav-link" href="quiz.html">팀 찾기</a></li>
+          <li><a class="nav-link" href="teams.html">구단 목록</a></li>
+          <li class="dropdown"><a href="#"><span>응원 문화</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="chants.html">응원가 모음</a></li>
+              <li><a href="goods.html">굿즈·유니폼</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>직관 가이드</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stadiums.html">구장 가이드</a></li>
+              <li><a href="food.html">구장별 먹거리</a></li>
+              <li><a href="ticket.html">티켓 예매</a></li>
+              <li><a href="checklist.html">직관 준비물</a></li>
+              <li><a href="dayguide.html">직관 당일 가이드</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>야구 입문</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="rules.html">야구 기초 규칙</a></li>
+              <li><a href="positions.html">포지션 소개</a></li>
+              <li><a href="glossary.html">야구 용어 사전</a></li>
+              <li><a href="derby.html">라이벌전·더비</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" href="contact.html">문의</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>투수 주요 선수</h2>
+          <ol>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="positions.html">포지션 소개</a></li>
+            <li>투수</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-page">
+      <div class="container">
+
+        <style>
+          .back-link{display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;color:#1bac91;font-weight:700;font-size:13px;text-decoration:none}
+          .player-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+          .player-card{background:#fff;border:2px solid #111;border-radius:0;overflow:hidden;text-align:center;transition:transform .2s,box-shadow .2s}
+          .player-card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 rgba(0,0,0,.18)}
+          .player-photo{aspect-ratio:1/1.35;background:#f4f4f4;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:2px solid #111}
+          .player-photo img{width:100%;height:100%;object-fit:cover;display:block}
+          .player-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:13px;background:linear-gradient(135deg,#f7f7f7,#ececec)}
+          .player-info{padding:18px 10px 20px}
+          .team-name{font-size:13px;font-weight:900;margin-bottom:8px;letter-spacing:-.2px}
+          .player-name{font-size:17px;font-weight:900;color:#222;margin-bottom:6px}
+          .player-number{display:inline-block;border-radius:0;padding:5px 12px;color:#fff;font-size:13px;font-weight:900}
+          .notice-box{background:#f6fffc;border-left:4px solid #1bac91;border-radius:0;padding:14px 16px;margin-bottom:24px;color:#555;font-size:13px;line-height:1.8}
+          @media(max-width:1000px){.player-grid{grid-template-columns:repeat(3,1fr)}}
+          @media(max-width:600px){.player-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+        </style>
+
+        <a href="positions.html" class="back-link">← 포지션 소개로 돌아가기</a>
+        <div class="section-title mb-5" data-aos="fade-up">
+          <h2>⚾ 투수 주요 선수</h2>
+          <p>각 구단별 투수 선수 사진과 이름, 등번호를 정리하는 페이지예요</p>
+        </div>
+        <div class="notice-box">
+          선수 사진은 <strong>assets/img/players/{구단명}_{포지션명}.png</strong> 형식으로 넣으면 자동으로 표시돼요.<br>
+          예: LG 투수 사진은 <strong>assets/img/players/lg_pitcher.png</strong>
+        </div>
+        <div class="player-grid">
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/lg_pitcher.png" alt="LG 트윈스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#c30452">LG 트윈스</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#c30452">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/doosan_pitcher.png" alt="두산 베어스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#131230">두산 베어스</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#131230">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/kiwoom_pitcher.png" alt="키움 히어로즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#570514">키움 히어로즈</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#570514">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/ssg_pitcher.png" alt="SSG 랜더스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#ce0e2d">SSG 랜더스</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#ce0e2d">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/kt_pitcher.png" alt="KT 위즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#000000">KT 위즈</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#000000">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/nc_pitcher.png" alt="NC 다이노스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#315288">NC 다이노스</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#315288">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/lotte_pitcher.png" alt="롯데 자이언츠 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#041e42">롯데 자이언츠</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#041e42">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/samsung_pitcher.png" alt="삼성 라이온즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#074ca1">삼성 라이온즈</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#074ca1">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/kia_pitcher.png" alt="KIA 타이거즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#ea0029">KIA 타이거즈</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#ea0029">등번호</span>
+            </div>
+          </div>
+          <div class="player-card">
+            <div class="player-photo">
+              <img src="assets/img/players/hanwha_pitcher.png" alt="한화 이글스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="player-placeholder" style="display:none;">사진 준비중</div>
+            </div>
+            <div class="player-info">
+              <div class="team-name" style="color:#fc4e00">한화 이글스</div>
+              <div class="player-name">선발투수 이름</div>
+              <span class="player-number" style="background:#fc4e00">등번호</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>PLAYBALL</h3>
+              <p>KBO 야구 직관 입문 가이드<br><br>
+                <strong>Team:</strong> 리싸인<br>
+                <strong>Members:</strong> 손범관 · 전우빈<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>메뉴</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">홈</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">사이트 소개</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="quiz.html">팀 찾기</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="teams.html">구단 목록</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">문의</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>직관 가이드</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="stadiums.html">구장 가이드</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ticket.html">티켓 예매</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="checklist.html">직관 준비물</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="rules.html">야구 규칙</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="glossary.html">용어 사전</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>중앙대학교</h4>
+            <p>표준웹테크놀로지 01분반 기말 프로젝트<br>20221169 손범관 · 20202899 전우빈</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">&copy; Copyright <strong><span>PLAYBALL</span></strong>. TEAM 리싸인</div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

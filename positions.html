@@ -75,19 +75,81 @@
       <div class="container">
 
         <style>
-          .diagram-box{background:#f4f4f4;border-radius:16px;height:240px;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:14px;margin-bottom:36px;border:1px dashed #ddd}
+          .diagram-box{
+            background:#fff;
+            border-radius:16px;
+            min-height:240px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin-bottom:36px;
+            border:1px solid #eee;
+            overflow:hidden;
+            padding:18px;
+          }
+          .diagram-box img{
+            width:100%;
+            max-width:760px;
+            height:auto;
+            display:block;
+          }
           .pos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-          .pos-card{background:#fff;border:1px solid #eee;border-radius:14px;padding:20px;text-align:center;transition:transform .2s}
+          .pos-card{background:#fff;border:1px solid #eee;border-radius:14px;padding:20px;text-align:center;transition:transform .2s;text-decoration:none;color:inherit;display:block}
           .pos-card:hover{transform:translateY(-4px)}
           .pos-icon{font-size:32px;margin-bottom:10px}
+          .pos-icon img{width:38px;height:38px;object-fit:cover;display:inline-block;vertical-align:middle}
           .pos-card h4{font-size:14px;margin-bottom:6px}
           .pos-card p{font-size:12px;color:#888;line-height:1.6}
           @media(max-width:500px){.pos-grid{grid-template-columns:1fr 1fr}}
         </style>
         <div class="section-title mb-5" data-aos="fade-up"><h2>야구 포지션 소개</h2><p>9명의 선수가 각자 맡은 위치와 역할이 달라요</p></div>
-        <div class="diagram-box">[ 야구장 포지션 다이어그램 이미지 ]</div>
+        <div class="diagram-box"><img src="assets/img/baseball_position.png" alt="야구 포지션 다이어그램"></div>
         <div class="pos-grid">
-          <div class="pos-card"><div class="pos-icon">⚾</div><h4>투수 (Pitcher)</h4><p>공을 던지는 선수. 경기의 핵심</p></div><div class="pos-card"><div class="pos-icon">🥊</div><h4>포수 (Catcher)</h4><p>투수 뒤에서 공을 받는 수비 핵심</p></div><div class="pos-card"><div class="pos-icon">1️⃣</div><h4>1루수</h4><p>1루 베이스를 지키는 선수</p></div><div class="pos-card"><div class="pos-icon">2️⃣</div><h4>2루수</h4><p>2루 근처를 담당하는 선수</p></div><div class="pos-card"><div class="pos-icon">3️⃣</div><h4>3루수</h4><p>3루 베이스를 지키는 선수</p></div><div class="pos-card"><div class="pos-icon">🔄</div><h4>유격수 (SS)</h4><p>2루~3루 사이 담당. 수비 핵심</p></div><div class="pos-card"><div class="pos-icon">👈</div><h4>좌익수 (LF)</h4><p>외야 왼쪽을 담당하는 선수</p></div><div class="pos-card"><div class="pos-icon">⬆️</div><h4>중견수 (CF)</h4><p>외야 가운데 담당. 발 빠른 선수</p></div><div class="pos-card"><div class="pos-icon">👉</div><h4>우익수 (RF)</h4><p>외야 오른쪽을 담당하는 선수</p></div>
+          <a href="position_pitcher.html" class="pos-card">
+            <div class="pos-icon">⚾</div>
+            <h4>투수 (Pitcher)</h4>
+            <p>공을 던지는 선수. 경기의 핵심</p>
+          </a>
+          <a href="position_catcher.html" class="pos-card">
+            <div class="pos-icon"><img src="assets/img/catcher_glove_2.png" alt="포수 글러브"></div>
+            <h4>포수 (Catcher)</h4>
+            <p>투수 뒤에서 공을 받는 수비 핵심</p>
+          </a>
+          <a href="position_first.html" class="pos-card">
+            <div class="pos-icon">1️⃣</div>
+            <h4>1루수 (First Baseman)</h4>
+            <p>1루 베이스를 지키는 선수</p>
+          </a>
+          <a href="position_second.html" class="pos-card">
+            <div class="pos-icon">2️⃣</div>
+            <h4>2루수 (Second Baseman)</h4>
+            <p>2루 근처를 담당하는 선수</p>
+          </a>
+          <a href="position_third.html" class="pos-card">
+            <div class="pos-icon">3️⃣</div>
+            <h4>3루수 (Third Baseman)</h4>
+            <p>3루 베이스를 지키는 선수</p>
+          </a>
+          <a href="position_shortstop.html" class="pos-card">
+            <div class="pos-icon">🔄</div>
+            <h4>유격수 (Shortstop)</h4>
+            <p>2루~3루 사이 담당. 수비 핵심</p>
+          </a>
+          <a href="position_left.html" class="pos-card">
+            <div class="pos-icon">👈</div>
+            <h4>좌익수 (Left Fielder)</h4>
+            <p>외야 왼쪽을 담당하는 선수</p>
+          </a>
+          <a href="position_center.html" class="pos-card">
+            <div class="pos-icon">⬆️</div>
+            <h4>중견수 (Center Fielder)</h4>
+            <p>외야 가운데 담당. 발 빠른 선수</p>
+          </a>
+          <a href="position_right.html" class="pos-card">
+            <div class="pos-icon">👉</div>
+            <h4>우익수 (Right Fielder)</h4>
+            <p>외야 오른쪽을 담당하는 선수</p>
+          </a>
         </div>
       </div>
     </section>
