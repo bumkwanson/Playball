@@ -61,7 +61,7 @@
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>투수 주요 선수</h2>
+          <h2><strong>투수</strong></h2>
           <ol>
             <li><a href="index.html">홈</a></li>
             <li><a href="positions.html">포지션 소개</a></li>
@@ -75,140 +75,134 @@
       <div class="container">
 
         <style>
-          .back-link{display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;color:#1bac91;font-weight:700;font-size:13px;text-decoration:none}
-          .player-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+          .back-link{display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;color:#000000;font-weight:700;font-size:13px;text-decoration:none}
+          .player-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
           .player-card{background:#fff;border:2px solid #111;border-radius:0;overflow:hidden;text-align:center;transition:transform .2s,box-shadow .2s}
           .player-card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 rgba(0,0,0,.18)}
-          .player-photo{aspect-ratio:1/1.35;background:#f4f4f4;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:2px solid #111}
+          .player-photo{aspect-ratio:1/1.45;background:#f4f4f4;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:2px solid #111}
           .player-photo img{width:100%;height:100%;object-fit:cover;display:block}
           .player-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:13px;background:linear-gradient(135deg,#f7f7f7,#ececec)}
-          .player-info{padding:18px 10px 20px}
-          .team-name{font-size:13px;font-weight:900;margin-bottom:8px;letter-spacing:-.2px}
-          .player-name{font-size:17px;font-weight:900;color:#222;margin-bottom:6px}
-          .player-number{display:inline-block;border-radius:0;padding:5px 12px;color:#fff;font-size:13px;font-weight:900}
-          .notice-box{background:#f6fffc;border-left:4px solid #1bac91;border-radius:0;padding:14px 16px;margin-bottom:24px;color:#555;font-size:13px;line-height:1.8}
-          @media(max-width:1000px){.player-grid{grid-template-columns:repeat(3,1fr)}}
-          @media(max-width:600px){.player-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+          .player-info{padding:18px 12px 20px;color:#fff}
+          .team-name{font-size:13px;font-weight:900;margin-bottom:8px;letter-spacing:-.2px;color:#fff!important}
+          .player-name{font-size:18px;font-weight:900;color:#fff;margin-bottom:6px}
+          .player-number{display:inline-block;border:1px solid rgba(255,255,255,.75);border-radius:0;padding:5px 12px;color:#fff;font-size:13px;font-weight:900;background:transparent!important}
+          @media(max-width:1000px){.player-grid{grid-template-columns:repeat(2,1fr)}}
+          @media(max-width:600px){.player-grid{grid-template-columns:1fr;gap:18px}}
         </style>
 
         <a href="positions.html" class="back-link">← 포지션 소개로 돌아가기</a>
         <div class="section-title mb-5" data-aos="fade-up">
-          <h2>⚾ 투수 주요 선수</h2>
-          <p>각 구단별 투수 선수 사진과 이름, 등번호를 정리하는 페이지예요</p>
+          <h1>⚾ 투수</h1>
         </div>
-        <div class="notice-box">
-          선수 사진은 <strong>assets/img/players/{구단명}_{포지션명}.png</strong> 형식으로 넣으면 자동으로 표시돼요.<br>
-          예: LG 투수 사진은 <strong>assets/img/players/lg_pitcher.png</strong>
-        </div>
-        <div class="player-grid">
+<div class="player-grid">
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/lg_pitcher.png" alt="LG 트윈스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/lg_pitcher.jpg" alt="LG 트윈스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#c30452">LG 트윈스</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#c30452">등번호</span>
+            <div class="player-info" style="background:#c30452">
+              <div class="team-name">LG 트윈스</div>
+              <div class="player-name">디트릭 엔스</div>
+              <span class="player-number" style="background:#c30452">No.34</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/doosan_pitcher.png" alt="두산 베어스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/ob_pitcher.avif" alt="두산 베어스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#131230">두산 베어스</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#131230">등번호</span>
+            <div class="player-info" style="background:#131230">
+              <div class="team-name">두산 베어스</div>
+              <div class="player-name">곽빈</div>
+              <span class="player-number" style="background:#131230">No.47</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/kiwoom_pitcher.png" alt="키움 히어로즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/wo_pitcher.avif" alt="키움 히어로즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#570514">키움 히어로즈</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#570514">등번호</span>
+            <div class="player-info" style="background:#570514">
+              <div class="team-name">키움 히어로즈</div>
+              <div class="player-name">안우진</div>
+              <span class="player-number" style="background:#570514">No.41</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/ssg_pitcher.png" alt="SSG 랜더스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/ssg_pitcher.jpg" alt="SSG 랜더스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#ce0e2d">SSG 랜더스</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#ce0e2d">등번호</span>
+            <div class="player-info" style="background:#ce0e2d">
+              <div class="team-name">SSG 랜더스</div>
+              <div class="player-name">김광현</div>
+              <span class="player-number" style="background:#ce0e2d">No.29</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/kt_pitcher.png" alt="KT 위즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/kt_pitcher.jpg" alt="KT 위즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#000000">KT 위즈</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#000000">등번호</span>
+            <div class="player-info" style="background:#000000">
+              <div class="team-name">KT 위즈</div>
+              <div class="player-name">고영표</div>
+              <span class="player-number" style="background:#000000">No.1</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/nc_pitcher.png" alt="NC 다이노스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/nc_pitcher.webp" alt="NC 다이노스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#315288">NC 다이노스</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#315288">등번호</span>
+            <div class="player-info" style="background:#315288">
+              <div class="team-name">NC 다이노스</div>
+              <div class="player-name">카일 하트</div>
+              <span class="player-number" style="background:#315288">No.45</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/lotte_pitcher.png" alt="롯데 자이언츠 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/lt_pitcher.jpg" alt="롯데 자이언츠 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#041e42">롯데 자이언츠</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#041e42">등번호</span>
+            <div class="player-info" style="background:#041e42">
+              <div class="team-name">롯데 자이언츠</div>
+              <div class="player-name">박세웅</div>
+              <span class="player-number" style="background:#041e42">No.32</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/samsung_pitcher.png" alt="삼성 라이온즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/ss_pitcher.jpg" alt="삼성 라이온즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#074ca1">삼성 라이온즈</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#074ca1">등번호</span>
+            <div class="player-info" style="background:#074ca1">
+              <div class="team-name">삼성 라이온즈</div>
+              <div class="player-name">아리엘 후라도</div>
+              <span class="player-number" style="background:#074ca1">No.75</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/kia_pitcher.png" alt="KIA 타이거즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/kia_pitcher.jpg" alt="KIA 타이거즈 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#ea0029">KIA 타이거즈</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#ea0029">등번호</span>
+            <div class="player-info" style="background:#ea0029">
+              <div class="team-name">KIA 타이거즈</div>
+              <div class="player-name">제임스 네일</div>
+              <span class="player-number" style="background:#ea0029">No.40</span>
             </div>
           </div>
           <div class="player-card">
             <div class="player-photo">
-              <img src="assets/img/players/hanwha_pitcher.png" alt="한화 이글스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <img src="assets/img/players/pitcher/hh_pitcher.jpg" alt="한화 이글스 투수" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
               <div class="player-placeholder" style="display:none;">사진 준비중</div>
             </div>
-            <div class="player-info">
-              <div class="team-name" style="color:#fc4e00">한화 이글스</div>
-              <div class="player-name">선발투수 이름</div>
-              <span class="player-number" style="background:#fc4e00">등번호</span>
+            <div class="player-info" style="background:#fc4e00">
+              <div class="team-name">한화 이글스</div>
+              <div class="player-name">류현진</div>
+              <span class="player-number" style="background:#fc4e00">No.99</span>
             </div>
           </div>
         </div>
