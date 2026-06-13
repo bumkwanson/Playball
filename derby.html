@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>라이벌전·더비 — PLAYBALL</title>
+  <title>야구 용어 사전 — PLAYBALL</title>
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -63,10 +63,10 @@
   <section class="breadcrumbs">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <h2>라이벌전·더비</h2>
+        <h2>야구 용어 사전</h2>
         <ol>
           <li><a href="index.html">홈</a></li>
-          <li>라이벌전·더비</li>
+          <li>야구 용어 사전</li>
         </ol>
       </div>
     </div>
@@ -75,37 +75,212 @@
       <div class="container">
 
         <style>
-          .derby-list{display:flex;flex-direction:column;gap:28px}
-          .derby-item{display:grid;grid-template-columns:1fr 1fr;border-radius:18px;overflow:hidden;border:1px solid #eee}
-          .derby-item:nth-child(even){direction:rtl}
-          .derby-item:nth-child(even) .derby-body{direction:ltr}
-          .derby-img{height:220px;display:grid;grid-template-columns:50% 50%;background:transparent;gap:0;position:relative}
-          .derby-logo-half{display:block;background-size:cover;background-position:center center;background-repeat:no-repeat;position:relative;margin:0;padding:0;overflow:hidden}
-          .derby-logo-half::after{
-              content:'';
-              position:absolute;
-              inset:0;
-              pointer-events:none;
-              background:radial-gradient(
-                circle at center,
-                rgba(0,0,0,0) 45%,
-                rgba(0,0,0,.4) 100%
-              );
-            }
-          .derby-logo-half.left{border-right:0}
-          .derby-logo-half img{position:relative;z-index:1;max-width:78%;max-height:78%;object-fit:contain}
-          .derby-vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:58px;height:58px;border-radius:50%;background:#111;color:#fff;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;letter-spacing:-1px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
-          .derby-body{padding:30px;direction:ltr;background:#fff}
-          .derby-badge{display:inline-block;background:#1bac91;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;margin-bottom:12px}
-          .derby-teams{font-size:22px;font-weight:700;margin-bottom:8px}
-          .derby-name{font-size:18px;margin-bottom:10px;color:#333}
-          .derby-desc{font-size:13px;color:#666;line-height:1.9}
-          @media(max-width:600px){.derby-item,.derby-item:nth-child(even){grid-template-columns:1fr;direction:ltr}}
+          .glossary-search{display:flex;gap:12px;margin-bottom:24px}
+          .glossary-search input{flex:1;border:2px solid #eee;border-radius:10px;padding:12px 16px;font-size:14px;font-family:'KBO',sans-serif;outline:none;transition:border-color .2s}
+          .glossary-search input:focus{border-color:#1bac91}
+          .term-item{background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;margin-bottom:8px}
+          .term-q{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;cursor:pointer;font-weight:700;font-size:15px;transition:background .2s}
+          .term-q:hover{background:#f9f9f9}
+          .term-q .arrow{transition:transform .3s;color:#aaa;font-size:12px}
+          .term-q.open .arrow{transform:rotate(180deg)}
+          .term-a{display:none;padding:18px 20px;font-size:14px;color:#666;line-height:1.9;border-top:1px solid #eee}
+          .term-a.show{display:block}
+          .term-detail{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:start}
+          .term-detail.no-img{display:block}
+          .term-point{background:#f6fffc;border-left:4px solid #1bac91;border-radius:8px;padding:10px 12px;margin-top:10px;color:#225}
+          .term-point strong{color:#1bac91}
+          .term-img{background:#f7f7f7;border:1px solid #eee;border-radius:12px;padding:10px;text-align:center}
+          .term-img img{width:100%;max-height:600px;object-fit:contain;border-radius:8px}
+          .term-img small{display:block;margin-top:7px;color:#999;font-size:11px;line-height:1.5}
+          .term-source{margin-top:26px;background:#f9f9f9;border:1px solid #eee;border-radius:12px;padding:16px 20px;font-size:13px;color:#666;line-height:1.8}
+          .term-source strong{color:#333}
+          @media(max-width:700px){.term-detail{grid-template-columns:1fr}.term-img img{max-height:none}}
         </style>
-        <div class="section-title mb-5" data-aos="fade-up"><h2>KBO 라이벌전·더비</h2><p>야구를 더 뜨겁게 만드는 라이벌 매치들이에요</p></div>
-        <div class="derby-list">
-          <div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LG_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_OB_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">잠실 더비</span><div class="derby-teams">LG vs 두산</div><div class="derby-name">엘꼴라시코</div><p class="derby-desc">같은 잠실야구장을 홈구장으로 쓰는 두 팀의 맞대결. 서울 팬들의 자존심을 건 한판.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_HT_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_SS_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">전통 라이벌</span><div class="derby-teams">KIA vs 삼성</div><div class="derby-name">한국판 엘클라시코</div><p class="derby-desc">KBO 역사에서 우승을 가장 많이 나눠가진 두 명문 구단. 한국 야구의 역사가 담긴 대결.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LT_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_NC_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">낙동강 더비</span><div class="derby-teams">롯데 vs NC</div><div class="derby-name">경남 자존심 대결</div><p class="derby-desc">부산 롯데와 창원 NC의 경남 지역 더비. 양 팀 팬들의 응원이 뜨겁기로 유명.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LG_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_WO_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">서울 더비</span><div class="derby-teams">LG vs 키움</div><div class="derby-name">서울 하늘 쟁탈전</div><p class="derby-desc">같은 서울을 연고지로 하는 두 팀의 더비. 잠실과 고척이라는 독특한 구장 대결.</p></div></div>
+        <div class="section-title mb-5" data-aos="fade-up"><h2>야구 용어 사전</h2><p>자주 등장하는 야구 용어들을 쉽게 정리했어요</p></div>
+        <div class="glossary-search"><input type="text" placeholder="🔍 용어 검색..." oninput="searchGlossary(this.value)" id="gSearch"></div>
+        <div id="termList">
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>스트라이크</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail">
+                <div>
+                  투수가 던진 공이 스트라이크 존을 통과하거나, 타자가 헛스윙하거나, 파울을 치면 스트라이크가 올라가요.<br>
+                  KBO ABS 기준에서는 홈 플레이트의 중간면과 끝면에서 모두 상하 기준을 충족해야 스트라이크로 판정됩니다.
+                  <div class="term-point"><strong>쉽게 말하면?</strong> 공이 정해진 존 안에 들어오거나 선에 걸치면 1스트라이크! 3스트라이크가 되면 타자는 삼진 아웃이에요.</div>
+                </div>
+                <div class="term-img">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/KBOHome/resources/images/sub/img_manage1_2026.png" alt="KBO ABS 스트라이크 존 기준 이미지">
+                  <small>KBO 2026 ABS 스트라이크 존 기준 이미지</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>볼</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail">
+                <div>
+                  투수가 던진 공이 스트라이크 존을 벗어나고 타자가 스윙하지 않으면 볼이 됩니다. <br>볼이 4개가 되면 타자는 공을 치지 않아도 1루로 걸어나갈 수 있어요.
+                  <div class="term-point"><strong>쉽게 말하면?</strong> 타자가 치기 어려운 곳으로 공이 빠지면 볼! 4볼이면 볼넷으로 출루합니다.</div>
+                </div>
+                <div class="term-img">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/KBOHome/resources/images/sub/img_manage1_2026.png" alt="KBO ABS 볼 스트라이크 판정 기준 이미지">
+                  <small>스트라이크 존을 벗어나면 볼로 판정될 수 있어요.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>홈런</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                타자가 친 공이 외야 펜스를 넘어가면 홈런이에요. <br>홈런을 치면 타자는 홈까지 모두 돌 수 있고, 1루·2루·3루에 있던 주자들도 모두 홈으로 들어와 득점합니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 공이 담장을 넘어가면 가장 확실한 득점 찬스! 주자가 많을수록 한 번에 많은 점수가 납니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>삼진</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                타자가 한 타석에서 스트라이크 3개를 기록하면 삼진이에요. <br>헛스윙, 스트라이크 존 통과, 파울 등이 쌓여 스트라이크 카운트가 올라갑니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 스트라이크가 세 번 쌓이면 타자는 아웃됩니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>볼넷</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                한 타석에서 볼이 4개가 되면 볼넷이에요.<br>타자는 공을 치지 않아도 자동으로 1루에 나갑니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 투수가 스트라이크 존에 공을 못 넣으면 타자에게 1루를 주는 상황이에요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>피치클락</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                경기 시간을 줄이고 흐름을 빠르게 하기 위해 투수와 타자가 정해진 시간 안에 준비해야 하는 규칙이에요. <br>KBO 2026 기준으로 투수는 주자 없을 때 18초, 주자 있을 때 23초 안에 투구 동작을 시작해야 하고, 타자는 8초가 표시된 시점에 타격 준비를 마쳐야 합니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 너무 오래 끌면 안 되는 시간 제한 규칙! 투수·포수가 어기면 볼, 타자가 어기면 스트라이크가 부과될 수 있어요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>더블플레이</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                수비팀이 한 번의 플레이로 두 명의 공격 선수를 아웃시키는 상황이에요.<br>보통 주자가 1루에 있을 때 땅볼이 나오면 2루에서 한 명, 1루에서 한 명을 잡아 더블플레이가 만들어집니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 수비팀 입장에서는 한 번에 아웃카운트 2개를 잡는 최고의 장면이에요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>체크스윙</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail">
+                <div>
+                  타자가 치려다가 중간에 배트를 멈추는 동작이에요. <br> KBO 체크스윙 판독 기준은 배트 끝의 각도가 홈플레이트 앞면과 평행한 기준선을 넘어 투수 방향으로 향했는지를 봅니다.
+                  <div class="term-point"><strong>쉽게 말하면?</strong> 배트를 참은 것처럼 보여도 기준선을 넘으면 스윙 스트라이크가 될 수 있어요.</div>
+                </div>
+                <div class="term-img">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/KBOHome/resources/images/sub/img_manage3_2025.png" alt="KBO 체크스윙 판독 기준 이미지">
+                  <small>KBO 체크스윙 판독 기준 이미지</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>3피트 라인</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail">
+                <div>
+                  타자가 1루로 달릴 때 주자가 달릴 수 있는 주로를 말해요. <br>KBO 2026 규정 안내에 따르면 기존 3피트 라인 외에도 1루 파울라인 안쪽 흙 부분까지 주로로 인정됩니다.
+                  <div class="term-point"><strong>쉽게 말하면?</strong> 1루로 뛰는 길이 조금 더 넓게 인정되는 규칙이에요. 단, 수비를 방해했다고 판단되면 아웃될 수 있어요.</div>
+                </div>
+                <div class="term-img">
+                  <img src="https://6ptotvmi5753.edge.naverncp.com/KBO_IMAGE/KBOHome/resources/images/sub/img_manage2_2026.png" alt="KBO 1루 3피트 라인 규칙 변경 이미지">
+                  <small>KBO 1루 3피트 라인 규칙 변경 이미지</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>클린업</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                보통 3번, 4번, 5번 타자를 말해요. <br>팀에서 장타력과 득점 생산력이 좋은 중심 타자들이 배치되는 경우가 많습니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 찬스에서 점수를 만들어야 하는 핵심 타순이에요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>불펜</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                선발 투수 이후 경기에 나오는 구원 투수들이 대기하고 몸을 푸는 공간 또는 그 투수진을 뜻해요.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 경기 후반을 책임지는 투수들의 대기실이자 전력입니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>세이브</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                팀이 이기고 있는 상황에서 마무리 투수가 리드를 지켜 경기를 끝냈을 때 주어지는 기록이에요.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 이기고 있는 경기를 끝까지 지켜낸 마무리 투수의 기록이에요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>희생번트</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                타자가 자신이 아웃될 가능성을 감수하고 공을 짧게 대서 주자를 다음 베이스로 보내는 작전이에요.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 내 아웃 하나를 주고 팀 주자를 한 베이스 더 보내는 작전입니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>대타</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                원래 타순의 선수 대신 다른 선수가 타석에 들어서는 것을 말해요. <br>보통 중요한 찬스에서 더 잘 칠 수 있는 선수를 투입합니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 중요한 순간에 대신 나와 치는 타자예요.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="term-q" onclick="toggleTerm(this)"><span>이닝</span><span class="arrow">▼</span></div>
+            <div class="term-a">
+              <div class="term-detail no-img">
+                양 팀이 공격과 수비를 한 번씩 하는 경기 단위예요. <br>프로야구는 보통 9이닝까지 진행되고, 동점이면 연장전으로 이어질 수 있습니다.
+                <div class="term-point"><strong>쉽게 말하면?</strong> 한 팀이 공격하고 수비까지 한 차례씩 끝나는 경기의 한 묶음이에요.</div>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <div class="term-source"><strong>참고:</strong> KBO 2026 주요 규정·규칙 페이지의 ABS, 피치클락, 3피트 라인, 체크스윙 판독 기준을 초보자용 문장으로 풀어 반영했습니다.</div>
+        <script>
+        function toggleTerm(el){el.classList.toggle('open');el.nextElementSibling.classList.toggle('show');}
+        function searchGlossary(v){document.querySelectorAll('.term-item').forEach(item=>{const q=item.querySelector('.term-q span').textContent; const a=item.querySelector('.term-a').textContent; item.style.display=(q.includes(v)||a.includes(v))?'block':'none';});}
+        </script>
       </div>
     </section>
   </main>
