@@ -79,7 +79,22 @@
           .derby-item{display:grid;grid-template-columns:1fr 1fr;border-radius:18px;overflow:hidden;border:1px solid #eee}
           .derby-item:nth-child(even){direction:rtl}
           .derby-item:nth-child(even) .derby-body{direction:ltr}
-          .derby-img{height:220px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:#fff}
+          .derby-img{height:220px;display:grid;grid-template-columns:50% 50%;background:transparent;gap:0;position:relative}
+          .derby-logo-half{display:block;background-size:cover;background-position:center center;background-repeat:no-repeat;position:relative;margin:0;padding:0;overflow:hidden}
+          .derby-logo-half::after{
+              content:'';
+              position:absolute;
+              inset:0;
+              pointer-events:none;
+              background:radial-gradient(
+                circle at center,
+                rgba(0,0,0,0) 45%,
+                rgba(0,0,0,.4) 100%
+              );
+            }
+          .derby-logo-half.left{border-right:0}
+          .derby-logo-half img{position:relative;z-index:1;max-width:78%;max-height:78%;object-fit:contain}
+          .derby-vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:58px;height:58px;border-radius:50%;background:#111;color:#fff;border:3px solid #fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;letter-spacing:-1px;box-shadow:0 6px 18px rgba(0,0,0,.35)}
           .derby-body{padding:30px;direction:ltr;background:#fff}
           .derby-badge{display:inline-block;background:#1bac91;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;margin-bottom:12px}
           .derby-teams{font-size:22px;font-weight:700;margin-bottom:8px}
@@ -89,7 +104,7 @@
         </style>
         <div class="section-title mb-5" data-aos="fade-up"><h2>KBO 라이벌전·더비</h2><p>야구를 더 뜨겁게 만드는 라이벌 매치들이에요</p></div>
         <div class="derby-list">
-          <div class="derby-item"><div class="derby-img" style="background:linear-gradient(135deg,#c30452,#131230)">LG vs 두산</div><div class="derby-body"><span class="derby-badge">잠실 더비</span><div class="derby-teams">LG vs 두산</div><div class="derby-name">엘꼴라시코</div><p class="derby-desc">같은 잠실야구장을 홈구장으로 쓰는 두 팀의 맞대결. 서울 팬들의 자존심을 건 한판.</p></div></div><div class="derby-item"><div class="derby-img" style="background:linear-gradient(135deg,#ea0029,#074ca1)">KIA vs 삼성</div><div class="derby-body"><span class="derby-badge">전통 라이벌</span><div class="derby-teams">KIA vs 삼성</div><div class="derby-name">한국판 엘클라시코</div><p class="derby-desc">KBO 역사에서 우승을 가장 많이 나눠가진 두 명문 구단. 한국 야구의 역사가 담긴 대결.</p></div></div><div class="derby-item"><div class="derby-img" style="background:linear-gradient(135deg,#041e42,#315288)">롯데 vs NC</div><div class="derby-body"><span class="derby-badge">낙동강 더비</span><div class="derby-teams">롯데 vs NC</div><div class="derby-name">경남 자존심 대결</div><p class="derby-desc">부산 롯데와 창원 NC의 경남 지역 더비. 양 팀 팬들의 응원이 뜨겁기로 유명.</p></div></div><div class="derby-item"><div class="derby-img" style="background:linear-gradient(135deg,#c30452,#570514)">LG vs 키움</div><div class="derby-body"><span class="derby-badge">서울 더비</span><div class="derby-teams">LG vs 키움</div><div class="derby-name">서울 하늘 쟁탈전</div><p class="derby-desc">같은 서울을 연고지로 하는 두 팀의 더비. 잠실과 고척이라는 독특한 구장 대결.</p></div></div>
+          <div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LG_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_OB_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">잠실 더비</span><div class="derby-teams">LG vs 두산</div><div class="derby-name">엘꼴라시코</div><p class="derby-desc">같은 잠실야구장을 홈구장으로 쓰는 두 팀의 맞대결. 서울 팬들의 자존심을 건 한판.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_HT_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_SS_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">전통 라이벌</span><div class="derby-teams">KIA vs 삼성</div><div class="derby-name">한국판 엘클라시코</div><p class="derby-desc">KBO 역사에서 우승을 가장 많이 나눠가진 두 명문 구단. 한국 야구의 역사가 담긴 대결.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LT_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_NC_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">낙동강 더비</span><div class="derby-teams">롯데 vs NC</div><div class="derby-name">경남 자존심 대결</div><p class="derby-desc">부산 롯데와 창원 NC의 경남 지역 더비. 양 팀 팬들의 응원이 뜨겁기로 유명.</p></div></div><div class="derby-item"><div class="derby-img"><div class="derby-logo-half left" style="background-image:url('assets/img/teams/bg_LG_1.png')"></div><div class="derby-logo-half right" style="background-image:url('assets/img/teams/bg_WO_1.png')"></div><div class="derby-vs">VS</div></div><div class="derby-body"><span class="derby-badge">서울 더비</span><div class="derby-teams">LG vs 키움</div><div class="derby-name">서울 하늘 쟁탈전</div><p class="derby-desc">같은 서울을 연고지로 하는 두 팀의 더비. 잠실과 고척이라는 독특한 구장 대결.</p></div></div>
         </div>
       </div>
     </section>
